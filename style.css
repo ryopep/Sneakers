@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-body {
-  margin: 0;
-}
-
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -13,10 +11,165 @@ header {
   justify-content: space-between;
   padding: 20px 40px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
 }
 
 .material-icons {
   font-size: 30px;
-  line-height:30px;
-   display: inline-block;
+  line-height: 30px;
+  display: inline-block;
+}
+
+video{
+ width:100%;
+ height:100%;
+ object-fit: cover;
+ padding-top:80px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* PICKUP */
+.PICKUP {
+  padding: 100px 0 50px;
+}
+
+.PICKUP ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.PICKUP li {
+  padding: 0 30px;
+
+}
+
+.PICKUP img {
+  width: 100%;
+}
+
+/* FEATURE */
+.FEATURE {
+  padding: 100px 16px 50px;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.feature div {
+  width: calc((100% - 26px) / 2);
+}
+
+.feature img {
+  width: 100%;
+  opacity : 0;
+  transform: translateY(20px);
+  transition:all 0.8s ease;
+  }
+
+.feature img.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav {
+  padding: 20px;
+}
+
+.item {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14.4px;
+  margin-bottom: 20px;
+}
+
+date {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+
+/* contact */
+.CONTACT {
+  padding: 50px 0;
+   color:white;
+  background: black;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.content{
+  display:flex;
+  gap:60px;
+  padding:0 16px;
+}
+
+.content div{
+  width:calc((100% - 60px) / 2)
+}
+
+.CONTACT p{
+  margin-bottom:30px;
+}
+
+.name{
+  width: 100%;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+.mail{
+  width: 100%;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+.message{
+  width:100%;
+  padding:20px 0;
+  margin-bottom:20px;
+}
+
+input[type="submit"] {
+width:200px;
+padding:12px 0;
+color:#fff;
+background:#000;
+border:solid 1px #fff;
+}
+
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:10px;
+}
+
+small{
+  font-size: 12px;
+}
+
+@media (min-width:984px){
+.feature div {
+  width: calc((100% - 52px) / 3);
+}
 }
